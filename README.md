@@ -9,14 +9,14 @@ The TodoList application is a simple web-based task management tool built using 
 - **User Authentication**: Secure login and registration system to manage user accounts.
 - **Task Management**: Create, read, update, and delete (CRUD) operations for tasks.
 - **Responsive Design**: Built with Bootstrap to ensure a seamless experience across devices.
-- **Client-side Validation**: Utilizes jQuery Validation for form validation to enhance user experience.
+- **Client-side**: Utilizes jQuery Validation for client-side validation.
+- **Server-side Validation**: ASP.NET Core for server-side validation to enhance user experience and ensure data integrity.
 - **Session Management**: Maintains user sessions to keep track of logged-in users.
-- **Privacy Policy Page**: A dedicated page to inform users about data handling practices.
 
 ## Technologies Used
 
-- **Backend**: ASP.NET Core 8.0
-- **Frontend**: HTML, CSS, JavaScript, Bootstrap, jQuery
+- **Backend**: ASP.NET Core 8.0 MVC
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
 - **Database**: SQL Server with Entity Framework Core
 - **Session Management**: ASP.NET Core Session
 - **Version Control**: Git for version control and collaboration
@@ -66,29 +66,8 @@ Before you begin, ensure you have the following installed:
 - **Deleting a Task**: Click on the "delete" button next to a task to remove it from your list.
 - **User Authentication**: Users can log in or register to manage their tasks securely.
 
-## Contributing
 
-Contributions are welcome! If you have suggestions for improvements or new features, please feel free to submit a pull request or open an issue.
-
-### How to Contribute
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your branch to your forked repository.
-5. Submit a pull request to the main repository.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- [ASP.NET Core Documentation](https://docs.microsoft.com/en-us/aspnet/core/)
-- [Bootstrap Documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
-- [jQuery Documentation](https://jquery.com/)
-- [Entity Framework Core Documentation](https://docs.microsoft.com/en-us/ef/core/)
 
 ## Contact
 
-For any inquiries or feedback, please reach out to [your-email@example.com].
+For any inquiries or feedback, please reach out to [Mohammedsalah235@yahoo.com].
