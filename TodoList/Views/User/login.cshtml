@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - TodoList</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TodoList.styles.css" asp-append-version="true" />
+</head>
+<style>
+    .container {
+        position: relative;
+        height: 100vh;
+    }
+    main{
+        position: absolute;
+        top:50%; left:50%;
+        transform: translate(-50%, -50%);
+    }
+
+</style>
+<body>
+    
+    <div class="container">
+        <main role="main" class="w-50">
+            <h4 align="center">Log-in form</h4>
+            <form asp-controller="User" asp-action="Login" method="post">
+                email: <input type="text" name="email" value="" class="form-control" />
+                password: <input type="text" name="pass" value="" class="form-control" />
+                <input type="submit" name="submit" value="Log-in" class="btn btn-success mt-1" />
+            </form>
+            @if (ViewBag.error != null)
+            {
+                <div class="text-danger">
+                    <p>@ViewBag.error</p>
+                </div>
+            }
+            <a asp-controller="User" asp-action="RegisterPage">Register</a>
+
+        </main>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

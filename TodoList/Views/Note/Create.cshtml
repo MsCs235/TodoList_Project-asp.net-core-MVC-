@@ -1,0 +1,25 @@
+﻿@model CreateNoteValidate
+
+@if (TempData["error"] != null)
+{
+	<div class="alert alert-danger" role="alert">
+		@TempData["error"]
+	</div>
+}
+
+
+<form method="POST" asp-controller="Note" asp-action="Create">
+	<div class="mb-3">
+		<label for="exampleFormControlInput1" class="form-label">Title</label>
+		<input type="text" class="form-control" name="Title" id="exampleFormControlInput1" placeholder="Title" value="@Model.Title">
+	</div>
+	<div class="mb-3">
+		<label for="exampleFormControlTextarea1" class="form-label">Content</label>
+		<textarea class="form-control" name="Content" id="exampleFormControlTextarea1" placeholder="Content" rows="10">@Model.Content</textarea>
+	</div>
+	<div class="mb-3">
+		<input type="submit" class="btn btn-success" value="Submit">
+	</div>
+</form>
+
+

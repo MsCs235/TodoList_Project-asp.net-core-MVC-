@@ -1,0 +1,15 @@
+﻿@model Note
+
+<form method="POST" asp-controller="Note" asp-action="Edit" asp-route-data="@Model.Id">
+	<div class="mb-3">
+		<label for="exampleFormControlInput1" class="form-label">Title</label>
+		<input type="text" class="form-control" name="Title" id="exampleFormControlInput1" value="@Model.Title">
+	</div>
+	<div class="mb-3">
+		<label for="exampleFormControlTextarea1" class="form-label">Content</label>
+		<textarea class="form-control" name="Content" id="exampleFormControlTextarea1" rows="10">@Model.Content</textarea>
+	</div>
+	<div class="mb-3">
+		<input type="submit" class="btn btn-success" value="Submit">
+	</div>
+</form>
