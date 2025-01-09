@@ -11,8 +11,9 @@ namespace TodoList.Models
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
+			//Write your DataSource and Catalog 
 			optionsBuilder.UseSqlServer
-				("Data Source=MOHAMMED_SALAH\\SQLEXPRESS;Initial Catalog=TodoList;Integrated Security=True;Encrypt=False;Trust Server Certificate=True");
+				("Data Source=????\\SQLEXPRESS;Initial Catalog=????;Integrated Security=True;Encrypt=False;Trust Server Certificate=True");
 			base.OnConfiguring(optionsBuilder);
 		}
 	}
